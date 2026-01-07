@@ -28,6 +28,7 @@ namespace AssignmentCSharpAndSqlServer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             UsernameLabel = new Label();
             textBoxUsername = new RoundedTextBox();
             EmailLabel = new Label();
@@ -42,7 +43,9 @@ namespace AssignmentCSharpAndSqlServer
             pictureBox1 = new PictureBox();
             label4 = new Label();
             SignUpLink = new LinkLabel();
+            CloseButton = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CloseButton).BeginInit();
             SuspendLayout();
             // 
             // UsernameLabel
@@ -171,11 +174,11 @@ namespace AssignmentCSharpAndSqlServer
             RegisterButton.FlatStyle = FlatStyle.Popup;
             RegisterButton.Font = new Font("Poppins Medium", 10.2F, FontStyle.Bold);
             RegisterButton.ForeColor = Color.White;
-            RegisterButton.Location = new Point(507, 549);
+            RegisterButton.Location = new Point(254, 549);
             RegisterButton.Margin = new Padding(4, 5, 4, 5);
             RegisterButton.Name = "RegisterButton";
             RegisterButton.Padding = new Padding(0, 4, 0, 0);
-            RegisterButton.Size = new Size(127, 41);
+            RegisterButton.Size = new Size(380, 43);
             RegisterButton.TabIndex = 5;
             RegisterButton.Text = "Register";
             RegisterButton.UseVisualStyleBackColor = false;
@@ -184,7 +187,7 @@ namespace AssignmentCSharpAndSqlServer
             // label2
             // 
             label2.Anchor = AnchorStyles.Top;
-            label2.BackColor = Color.Transparent;
+            label2.BackColor = Color.White;
             label2.Font = new Font("Poppins", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ActiveCaptionText;
             label2.Location = new Point(330, 29);
@@ -220,10 +223,10 @@ namespace AssignmentCSharpAndSqlServer
             // 
             // label4
             // 
-            label4.BackColor = Color.Transparent;
+            label4.BackColor = Color.White;
             label4.Font = new Font("Poppins Black", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(309, 82);
+            label4.Location = new Point(309, 79);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(341, 65);
@@ -237,11 +240,22 @@ namespace AssignmentCSharpAndSqlServer
             SignUpLink.LinkColor = Color.Teal;
             SignUpLink.Location = new Point(380, 606);
             SignUpLink.Name = "SignUpLink";
-            SignUpLink.Size = new Size(141, 20);
+            SignUpLink.Size = new Size(128, 20);
             SignUpLink.TabIndex = 43;
             SignUpLink.TabStop = true;
-            SignUpLink.Text = "Create new Account";
+            SignUpLink.Text = "Have an Account?";
             SignUpLink.Click += OnLoginRedirect;
+            // 
+            // CloseButton
+            // 
+            CloseButton.Image = Properties.Resources.Close;
+            CloseButton.Location = new Point(842, 12);
+            CloseButton.Name = "CloseButton";
+            CloseButton.Size = new Size(36, 37);
+            CloseButton.SizeMode = PictureBoxSizeMode.StretchImage;
+            CloseButton.TabIndex = 44;
+            CloseButton.TabStop = false;
+            CloseButton.Click += OnExit;
             // 
             // RegisterForm
             // 
@@ -251,6 +265,7 @@ namespace AssignmentCSharpAndSqlServer
             BackColor = Color.White;
             ClientSize = new Size(890, 670);
             ControlBox = false;
+            Controls.Add(CloseButton);
             Controls.Add(SignUpLink);
             Controls.Add(pictureBox1);
             Controls.Add(label4);
@@ -267,10 +282,12 @@ namespace AssignmentCSharpAndSqlServer
             Controls.Add(label2);
             FormBorderStyle = FormBorderStyle.None;
             HelpButton = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 5, 4, 5);
             Name = "RegisterForm";
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CloseButton).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -291,5 +308,6 @@ namespace AssignmentCSharpAndSqlServer
         private PictureBox pictureBox1;
         private Label label4;
         private LinkLabel SignUpLink;
+        private PictureBox CloseButton;
     }
 }

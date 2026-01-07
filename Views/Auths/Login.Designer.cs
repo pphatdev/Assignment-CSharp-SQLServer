@@ -186,7 +186,7 @@
             // 
             SignUpLink.AutoSize = true;
             SignUpLink.LinkColor = Color.Teal;
-            SignUpLink.Location = new Point(392, 589);
+            SignUpLink.Location = new Point(376, 551);
             SignUpLink.Name = "SignUpLink";
             SignUpLink.Size = new Size(141, 20);
             SignUpLink.TabIndex = 42;
