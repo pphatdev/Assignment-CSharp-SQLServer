@@ -1,3 +1,5 @@
+using AssignmentCSharpAndSqlServer.Components;
+
 namespace AssignmentCSharpAndSqlServer
 {
     partial class RegisterForm
@@ -38,13 +40,13 @@ namespace AssignmentCSharpAndSqlServer
             ConfirmPasswordLabel = new Label();
             textBoxConfirmPassword = new RoundedTextBox();
             RegisterButton = new RoundedButton();
-            label2 = new Label();
+            DescriptionLabel = new Label();
             ErrorLabel = new Label();
-            pictureBox1 = new PictureBox();
-            label4 = new Label();
+            Logo = new PictureBox();
+            TitleLabel = new Label();
             SignUpLink = new LinkLabel();
             CloseButton = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Logo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)CloseButton).BeginInit();
             SuspendLayout();
             // 
@@ -184,20 +186,20 @@ namespace AssignmentCSharpAndSqlServer
             RegisterButton.UseVisualStyleBackColor = false;
             RegisterButton.Click += OnRegister;
             // 
-            // label2
+            // DescriptionLabel
             // 
-            label2.Anchor = AnchorStyles.Top;
-            label2.BackColor = Color.White;
-            label2.Font = new Font("Poppins", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(330, 29);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.RightToLeft = RightToLeft.No;
-            label2.Size = new Size(230, 53);
-            label2.TabIndex = 0;
-            label2.Text = "Create an account 🚀";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            DescriptionLabel.Anchor = AnchorStyles.Top;
+            DescriptionLabel.BackColor = Color.White;
+            DescriptionLabel.Font = new Font("Poppins", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DescriptionLabel.ForeColor = SystemColors.ActiveCaptionText;
+            DescriptionLabel.Location = new Point(330, 29);
+            DescriptionLabel.Margin = new Padding(4, 0, 4, 0);
+            DescriptionLabel.Name = "DescriptionLabel";
+            DescriptionLabel.RightToLeft = RightToLeft.No;
+            DescriptionLabel.Size = new Size(230, 53);
+            DescriptionLabel.TabIndex = 0;
+            DescriptionLabel.Text = "Create an account 🚀";
+            DescriptionLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ErrorLabel
             // 
@@ -211,28 +213,28 @@ namespace AssignmentCSharpAndSqlServer
             ErrorLabel.TextAlign = ContentAlignment.MiddleCenter;
             ErrorLabel.Visible = false;
             // 
-            // pictureBox1
+            // Logo
             // 
-            pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(252, 82);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(67, 65);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 42;
-            pictureBox1.TabStop = false;
+            Logo.Image = Properties.Resources.logo;
+            Logo.Location = new Point(252, 82);
+            Logo.Name = "Logo";
+            Logo.Size = new Size(67, 65);
+            Logo.SizeMode = PictureBoxSizeMode.StretchImage;
+            Logo.TabIndex = 42;
+            Logo.TabStop = false;
             // 
-            // label4
+            // TitleLabel
             // 
-            label4.BackColor = Color.White;
-            label4.Font = new Font("Poppins Black", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(309, 79);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(341, 65);
-            label4.TabIndex = 41;
-            label4.Text = "POS System";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            TitleLabel.BackColor = Color.White;
+            TitleLabel.Font = new Font("Poppins Black", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TitleLabel.ForeColor = SystemColors.ActiveCaptionText;
+            TitleLabel.Location = new Point(309, 79);
+            TitleLabel.Margin = new Padding(4, 0, 4, 0);
+            TitleLabel.Name = "TitleLabel";
+            TitleLabel.Size = new Size(341, 65);
+            TitleLabel.TabIndex = 41;
+            TitleLabel.Text = "POS System";
+            TitleLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // SignUpLink
             // 
@@ -267,8 +269,8 @@ namespace AssignmentCSharpAndSqlServer
             ControlBox = false;
             Controls.Add(CloseButton);
             Controls.Add(SignUpLink);
-            Controls.Add(pictureBox1);
-            Controls.Add(label4);
+            Controls.Add(Logo);
+            Controls.Add(TitleLabel);
             Controls.Add(ConfirmPasswordLabel);
             Controls.Add(textBoxConfirmPassword);
             Controls.Add(PasswordLabel);
@@ -279,14 +281,14 @@ namespace AssignmentCSharpAndSqlServer
             Controls.Add(ErrorLabel);
             Controls.Add(UsernameLabel);
             Controls.Add(textBoxUsername);
-            Controls.Add(label2);
+            Controls.Add(DescriptionLabel);
             FormBorderStyle = FormBorderStyle.None;
             HelpButton = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 5, 4, 5);
             Name = "RegisterForm";
             StartPosition = FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Logo).EndInit();
             ((System.ComponentModel.ISupportInitialize)CloseButton).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -303,10 +305,10 @@ namespace AssignmentCSharpAndSqlServer
         private RoundedTextBox textBoxEmail;
         private RoundedTextBox textBoxPassword;
         private RoundedTextBox textBoxConfirmPassword;
-        private Label label2;
+        private Label DescriptionLabel;
         private Label ErrorLabel;
-        private PictureBox pictureBox1;
-        private Label label4;
+        private PictureBox Logo;
+        private Label TitleLabel;
         private LinkLabel SignUpLink;
         private PictureBox CloseButton;
     }
