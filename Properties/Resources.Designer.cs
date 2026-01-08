@@ -61,6 +61,16 @@ namespace AssignmentCSharpAndSqlServer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Cashier {
+            get {
+                object obj = ResourceManager.GetObject("Cashier", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Close {
@@ -83,10 +93,40 @@ namespace AssignmentCSharpAndSqlServer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HideCollapse {
+            get {
+                object obj = ResourceManager.GetObject("HideCollapse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Payments {
+            get {
+                object obj = ResourceManager.GetObject("Payments", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Report {
+            get {
+                object obj = ResourceManager.GetObject("Report", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -97,6 +137,36 @@ namespace AssignmentCSharpAndSqlServer.Properties {
             get {
                 object obj = ResourceManager.GetObject("Right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SidebarLogo {
+            get {
+                object obj = ResourceManager.GetObject("SidebarLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Stock {
+            get {
+                object obj = ResourceManager.GetObject("Stock", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] TransactionHistory {
+            get {
+                object obj = ResourceManager.GetObject("TransactionHistory", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }
