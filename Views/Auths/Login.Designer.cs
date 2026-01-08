@@ -174,6 +174,7 @@ namespace AssignmentCSharpAndSqlServer
             // CloseButton
             // 
             CloseButton.Image = Properties.Resources.Close;
+            CloseButton.Cursor = Cursors.Hand;
             CloseButton.Location = new Point(841, 12);
             CloseButton.Name = "CloseButton";
             CloseButton.Size = new Size(36, 37);
