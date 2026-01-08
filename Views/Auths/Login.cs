@@ -123,7 +123,7 @@ namespace AssignmentCSharpAndSqlServer
                     textBoxPassword.Text = string.Empty;
 
                     // Navigate to dashboard with proper form lifecycle
-                    DashboardForm dashboard = new DashboardForm(authenticatedUsername);
+                    MainForm dashboard = new MainForm(authenticatedUsername);
                     dashboard.Show();
                     this.Hide();
 
