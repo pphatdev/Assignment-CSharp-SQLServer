@@ -21,7 +21,7 @@ namespace AssignmentCSharpAndSqlServer
         private TextBox textBox1;
 
         // Events
-        public event EventHandler _TextChanged;
+        public event EventHandler? _TextChanged;
 
         // Constructor
         public RoundedTextBox()
@@ -74,7 +74,7 @@ namespace AssignmentCSharpAndSqlServer
         public bool PasswordChar { get => textBox1.UseSystemPasswordChar; set => textBox1.UseSystemPasswordChar = value; }
 
         [Category("Custom Appearance")]
-        public override string Text { get => textBox1.Text; set => textBox1.Text = value; }
+        public override string? Text { get => textBox1.Text; set => textBox1.Text = value ?? string.Empty; }
 
         [Category("Custom Appearance")]
         public override Color BackColor
