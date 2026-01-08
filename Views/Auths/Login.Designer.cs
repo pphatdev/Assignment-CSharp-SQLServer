@@ -1,4 +1,6 @@
-﻿namespace AssignmentCSharpAndSqlServer
+﻿using AssignmentCSharpAndSqlServer.Components;
+
+namespace AssignmentCSharpAndSqlServer
 {
     partial class LoginForm
     {
@@ -129,9 +131,7 @@
             // 
             LoginButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             LoginButton.BackColor = Color.Teal;
-            LoginButton.BorderColor = Color.White;
             LoginButton.BorderRadius = 20;
-            LoginButton.BorderSize = 0F;
             LoginButton.FlatStyle = FlatStyle.Popup;
             LoginButton.Font = new Font("Poppins Medium", 10.2F, FontStyle.Bold);
             LoginButton.ForeColor = Color.White;
