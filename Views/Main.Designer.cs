@@ -28,78 +28,77 @@ namespace AssignmentCSharpAndSqlServer
         /// </summary>
         private void InitializeComponent()
         {
-            panelMain = new Panel();
-            panelContent = new Panel();
-            panelBody = new Panel();
-            panelSidebar = new Panel();
-            panelMain.SuspendLayout();
-            panelContent.SuspendLayout();
+            MainPanel = new Panel();
+            ContentPanel = new Panel();
+            ContainerPanel = new Panel();
+            SidebarPanel = new Panel();
+            MainPanel.SuspendLayout();
+            ContentPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // panelMain
+            // MainPanel
             // 
-            panelMain.BackColor = Color.White;
-            panelMain.Controls.Add(panelContent);
-            panelMain.Controls.Add(panelSidebar);
-            panelMain.Dock = DockStyle.Fill;
-            panelMain.Location = new Point(0, 0);
-            panelMain.Margin = new Padding(3, 4, 3, 4);
-            panelMain.Name = "panelMain";
-            panelMain.Size = new Size(1297, 704);
-            panelMain.TabIndex = 3;
+            MainPanel.BackColor = Color.White;
+            MainPanel.Controls.Add(ContentPanel);
+            MainPanel.Controls.Add(SidebarPanel);
+            MainPanel.Dock = DockStyle.Fill;
+            MainPanel.Location = new Point(0, 0);
+            MainPanel.Margin = new Padding(3, 4, 3, 4);
+            MainPanel.Name = "MainPanel";
+            MainPanel.Size = new Size(1297, 704);
+            MainPanel.TabIndex = 3;
             // 
-            // panelContent
+            // ContentPanel
             // 
-            panelContent.BackColor = Color.White;
-            panelContent.Controls.Add(panelBody);
-            panelContent.Dock = DockStyle.Fill;
-            panelContent.Location = new Point(347, 0);
-            panelContent.Margin = new Padding(3, 4, 3, 4);
-            panelContent.Name = "panelContent";
-            panelContent.Size = new Size(950, 704);
-            panelContent.TabIndex = 1;
+            ContentPanel.BackColor = Color.White;
+            ContentPanel.Controls.Add(ContainerPanel);
+            ContentPanel.Dock = DockStyle.Fill;
+            ContentPanel.Location = new Point(347, 0);
+            ContentPanel.Margin = new Padding(3, 4, 3, 4);
+            ContentPanel.Name = "ContentPanel";
+            ContentPanel.Size = new Size(950, 704);
+            ContentPanel.TabIndex = 1;
             // 
-            // panelBody
+            // ContainerPanel
             // 
-            panelBody.BackColor = Color.WhiteSmoke;
-            panelBody.Dock = DockStyle.Fill;
-            panelBody.Location = new Point(0, 0);
-            panelBody.Name = "panelBody";
-            panelBody.Padding = new Padding(23, 27, 23, 27);
-            panelBody.Size = new Size(950, 704);
-            panelBody.TabIndex = 0;
+            ContainerPanel.BackColor = Color.WhiteSmoke;
+            ContainerPanel.Dock = DockStyle.Fill;
+            ContainerPanel.Location = new Point(0, 0);
+            ContainerPanel.Name = "ContainerPanel";
+            ContainerPanel.Padding = new Padding(0, 80, 0, 0);
+            ContainerPanel.Size = new Size(950, 704);
+            ContainerPanel.TabIndex = 0;
             // 
-            // panelSidebar
+            // SidebarPanel
             // 
-            panelSidebar.BackColor = Color.FromArgb(37, 37, 38);
-            panelSidebar.Dock = DockStyle.Left;
-            panelSidebar.Location = new Point(0, 0);
-            panelSidebar.Margin = new Padding(3, 4, 3, 4);
-            panelSidebar.Name = "panelSidebar";
-            panelSidebar.Size = new Size(347, 704);
-            panelSidebar.TabIndex = 0;
+            SidebarPanel.BackColor = Color.FromArgb(37, 37, 38);
+            SidebarPanel.Dock = DockStyle.Left;
+            SidebarPanel.Location = new Point(0, 0);
+            SidebarPanel.Margin = new Padding(3, 4, 3, 4);
+            SidebarPanel.Name = "SidebarPanel";
+            SidebarPanel.Size = new Size(347, 704);
+            SidebarPanel.TabIndex = 0;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1297, 704);
-            // ControlBox = false;
-            Controls.Add(panelMain);
+            Controls.Add(MainPanel);
             Margin = new Padding(3, 4, 3, 4);
             Name = "MainForm";
-            Text = "Point of Sale System";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "Point of Sale System";
             WindowState = FormWindowState.Maximized;
-            panelContent.ResumeLayout(false);
-            panelMain.ResumeLayout(false);
+            MainPanel.ResumeLayout(false);
+            ContentPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-        private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.Panel panelSidebar;
-        private System.Windows.Forms.Panel panelContent;
-        private System.Windows.Forms.Panel panelBody;
+        private System.Windows.Forms.Panel MainPanel;
+        private System.Windows.Forms.Panel SidebarPanel;
+        private System.Windows.Forms.Panel ContentPanel;
+        private System.Windows.Forms.Panel ContainerPanel;
     }
 }
